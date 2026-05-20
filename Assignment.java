@@ -5,7 +5,6 @@ import javax.swing.*;
 // INTERFACE
 // Contributed by Siti Nur Farah Maisarah (106387)
 // Defines the contract for any encoder class.
-// Separates WHAT the encoder does from HOW it does it.
 interface Encodable {
     boolean checkStringValidity(String inputText);
     int countCharacters(String inputText);
