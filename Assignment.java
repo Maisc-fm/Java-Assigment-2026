@@ -224,6 +224,7 @@ public class Assignment {
         //   4. Display output
         // NOTE: groupShift is intentionally NOT displayed per assignment spec
         encodeButton.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
 
                 String input = inputField.getText();
@@ -233,8 +234,9 @@ public class Assignment {
 
                 // Step 1: Validate
                 if (!obj.checkStringValidity(input)) {
-                    displayArea.setText("ERROR: Invalid input.\n"
-                            + "Please enter only lowercase letters (a-z), digits (0-9), and spaces.");
+                    displayArea.setText("ERROR: Invalid input.\n" 
+                    + "Please enter only lowercase letters (a-z), \n"
+                    + "digits (0-9), and spaces.");
                     return;
                 }
 
@@ -252,9 +254,10 @@ public class Assignment {
                 // Step 4: Display output
                 displayArea.setText(
                     "Non-space characters : " + charCount  + "\n" +
-                    "Final shift          : " + groupShift + " + " + charCount + " = " + finalShift + "\n\n" +
-                    "Output :\n" +
-                    result
+                    "Final shift : " + finalShift + "\n" +
+                    "Output : " +
+                    result + "\n\n" +
+                    "Encoding completed successfully!"
                 );
             }
         });
