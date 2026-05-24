@@ -84,7 +84,7 @@ class Encoded implements Encodable {
     }
 
     // GENERATE SHIFT
-    // Contributed by Nashrur Aisyah Hani (102776)
+    // Contributed by Nashrur Aisyha Hani (102776)
     // Derives a consistent group-specific shift value from the hardcoded
     // groupID using Java's built-in hashCode() method.
     // Math.abs() ensures non-negative value.
@@ -199,7 +199,7 @@ public class Assignment {
         frame.add(inputPanel, BorderLayout.NORTH);
 
         // OUTPUT DISPLAY AREA
-        // Contributed by Nur Syukrinah (97717) and Nashrur Aisyah Hani (102776)
+        // Contributed by Nur Syukrinah (97717) and Nashrur Aisyha Hani (102776)
         JTextArea displayArea = new JTextArea();
         displayArea.setEditable(false);
         displayArea.setFont(new Font("Monospaced", Font.PLAIN, 13));
